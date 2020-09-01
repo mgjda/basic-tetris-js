@@ -1,6 +1,47 @@
-.container{
+body {
+  /* https://www.toptal.com/designers/subtlepatterns/tag/paper/ */
+  background-image: url("so-white.png");
+  font-family: 'Play', sans-serif;
+}
+
+.main{
+  width: 800px;
+  margin: auto;
+  border: 1px solid;
+}
+
+.header{
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+  overflow: auto;
+}
+
+.title{
+  font-size: 72px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+}
+
+.header span{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  float: right;
+  padding-right: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -8,7 +49,7 @@
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  border: 1px solid;
 }
 
 .grid div {
@@ -18,18 +59,62 @@
 
 .tetromino {
   background-color: blue;
+  outline: 1px solid black;
+}
+
+.info-column{
+  margin-left: 50px;
+}
+
+.info-column h3{
+  font-size: 18px;
+}
+
+.info-column button{
+  width: 80px;
+  background-color: #e6e6e6;
+  border: 1px solid black;
+}
+
+.info-column button:hover{
+  background-color: #fafafa;
 }
 
 .mini-grid{
-  margin-left: 50px;
   width: 80px;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  border: 1px solid;
 }
 
 .mini-grid div {
   height: 20px;
   width: 20px;
+}
+
+footer{
+  background-color: #d9d9d9;
+  font-size: 14px;
+  padding: 5px;
+  border-top: 1px solid;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #6b6b6b;
+}
+
+footer a:active {
+  text-decoration: underline;
 }

@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let score = 0;
 
   const colors = [
-    'orange',
-    'red',
-    'purple',
-    'green',
-    'blue',
+    '#0d0d0d',
+    '#333333',
+    '#595959',
+    '#808080',
+    '#a6a6a6',
   ]
 
   const lTetromino = [
