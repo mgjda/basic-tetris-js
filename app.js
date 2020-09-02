@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
       moveDown();
     }
   }
-  document.addEventListener('keyup', control)
 
   function moveDown() {
     undraw();
@@ -187,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // button event
   startBtn.addEventListener('click', () => {
     if(timerId){
+      document.removeEventListener('keyup', control)
       clearInterval(timerId)
       timerId = null
     }else{
@@ -194,6 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timerId = setInterval(moveDown, 1000)
       nextRandom = Math.floor(Math.random() * theTetrominoes.length)
       displayShape()
+      document.addEventListener('keyup', control)
     }
   })
 
